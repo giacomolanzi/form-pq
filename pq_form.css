@@ -1,1 +1,121 @@
+@media (min-width: 1140px) {
+  .title-generic {
+    margin-bottom: 21px;
+  }
+  .btn-submit-generic {
+    width: 294px;
+    height: 43px;
+    border-radius: 0px;
+    background-color: hsl(192deg 100% 12%);
+    border-color: hsl(192deg 100% 12%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: hsl(0deg 0% 100%);
+    margin-top: 32px;
+    margin-bottom: 43px;
+  }
+  .btn-submit-generic:hover {
+    background-color: hsl(192deg 100% 12%);
+    border-color: hsl(192deg 100% 12%);
+  }
+}
 
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#title {
+}
+.title-generic {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: hsl(345deg 6% 13%);
+}
+
+.subtitle-generic {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: normal;
+  text-align: center;
+  color: hsl(345deg 6% 13%);
+}
+
+.form-generic {
+  font-family: Montserrat;
+  border: 0px;
+  border-bottom: solid 3px hsl(172deg 38% 57%);
+  border-radius: 0px;
+  color: hsl(0deg 0% 0%);
+  padding-left: 36px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: hsl(0deg 0% 100%);
+  background-clip: padding-box;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control::-webkit-input-placeholder {
+  color: #000000;
+}
+.form-margin-bottom {
+  margin-bottom: 20px;
+}
+input {
+  font-family: Montserrat;
+  color: hsl(0, 0, 0);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: start;
+}
+input::-webkit-input-placeholder {
+  -webkit-text-security: none;
+  direction: inherit !important;
+  pointer-events: none !important;
+  text-orientation: inherit !important;
+  writing-mode: inherit !important;
+  text-overflow: inherit;
+  white-space: pre;
+  overflow-wrap: normal;
+  line-height: initial !important;
+  -webkit-user-modify: read-only !important;
+  overflow: hidden;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.footer-text-generic {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: hsl(345deg 6% 13%);
+}
