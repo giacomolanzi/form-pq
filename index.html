@@ -5,36 +5,26 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-    <title>Input form generic</title>
-    <link rel="stylesheet" href="pq_form.css">
-
-    <!-- Setup del selettore di data -->
-    <script type="text/javascript">
+    <link rel="stylesheet" href="/style/pq_form.css">
+    <script src="/js/script.js"></script>
+    <script>
         $(function () {
             $("#datepicker").datepicker({
-                defaultDate: '-18Y',
+                defaultDate: "-18Y",
                 changeMonth: true,
                 changeYear: true,
-                yearRange: '1900:2006',
-                dateFormat: 'mm-dd-yy',
-                maxDate: '01/01/2006'
+                yearRange: "1900:2006",
+                dateFormat: "mm-dd-yy",
+                maxDate: "01/01/2006",
             });
         });
     </script>
+
+    <title>Input form generic</title>
 </head>
 
 <body>
-    <header style="display: inline-flex;">
+    <header>
         <picture>
             <!-- Versione Desktop 1956 × 484 -->
             <source media="(min-width:376px)" srcset="desktop.jpg" type="image/svg+xml">
@@ -43,133 +33,62 @@
             <!-- Versione standard ( = desktop), no media query -->
             <img src="desktop.jpg" class="img-fluid" alt="heroimage">
         </picture>
+
+        <div class="logo">
+            <img src="/images/logo.svg" class="img-fluid mx-auto d-block" alt="logo" width="244">
+        </div>
+
+
+        <div class="title">
+            <h1>Test di un form di inoltro</h1>
+        </div>
+        <hr class="spacer-davidclulow" />
+
+        <div class="subtitle">
+            <p>You’re only a few clicks away from getting email exclusives, special offers and more delivered right to your inbox.</p>
+        </div>
     </header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12" style="margin-top: 25px; margin-bottom: 25px;">
-                <img src="logo.svg" class="img-fluid mx-auto d-block" alt="logo" width="244">
+    <main class="form">
+
+        <!-- Inserire URL qui! -->
+        <form id="joinForm" action="https://hook.eu1.make.com/qqorybxx9xlcrr6jsgdm1337rmbwbxsq" method="POST">
+
+            <div class="form-hidden">
+                <input type="hidden" id="STORE_ID" name="STORE_ID" value="X-S1UK">
+                <input type="hidden" id="SALES_ORGANIZATION" name="SALES_ORGANIZATION" value="UK01">
+                <input type="hidden" id="SOURCE_ID" name="SOURCE_ID" value="datacapture_form">
+                <input type="hidden" id="DISTRIBUTION_CHANNEL" name="DISTRIBUTION_CHANNEL" value="S1">
+                <input type="hidden" id="EMAIL_PERMISSION_STATUS_" name="EMAIL_PERMISSION_STATUS_" value="I">
+                <input type="hidden" id="CUSTOMER_ID" name="CUSTOMER_ID_"><input type="hidden" id="CID" name="CID">
+                <input type="hidden" id="COUNTRY_" name="COUNTRY_" value="UK">
+                <input type="hidden" name="CAMPAIGN_" value="DC_PostCW_Form">
+                <input type="hidden" name="charset_" value="UTF-8">
+                <input type="hidden" name="_Sent_" value="2022-10-21 00:36:59.297">
+                <input type="hidden" name="_LID_" value="10828705">
+                <input type="hidden" name="_ri_" value="X0Gzc2X%3DAQpglLjHJlYQGzclyfmgKzbG7azeIHsfdzdOIMssw9Y5XBzcCPWvISzdtYVwjpnpgHlpgneHmgJoXX0Gzc2X%3DAQpglLjHJlYQGzdERv4qPzdlze3GO12EJbpWwfsw9Y5XBzcCPWvISzdtY">
+                <input type="hidden" name="_ei_" value="EOTUNwTcPxLOITgVlOWxOUY">
+                <input type="hidden" name="_di_" value="vgvrucln0mcdfkbmcjf4g31eq3jc9vhhdu9ciahfng8kfjrebdtg">
+                <input type="hidden" name="__HIDDEN_FIELD_NAMES__" value="STORE_ID;SALES_ORGANIZATION;SOURCE_ID;DISTRIBUTION_CHANNEL;EMAIL_PERMISSION_STATUS_;CUSTOMER_ID_;CID;COUNTRY_;CAMPAIGN_;charset_;_Sent_;_LID_;_ri_;_ei_;_di_;__HIDDEN_FIELD_NAMES__">
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 offset-lg-4 text-center">
-                <p id="title" class="title-generic">Test <br class="title-break" style="display:none"> di un form di inoltro</p>
+            <div class="form-visible">
+                <input type="text" class="form-generic form-control" id="inputname" placeholder="First Name*" name="FIRST_NAME" required="">
+                <input type="text" class="form-generic form-control" id="inputlastname" placeholder="Last Name*" name="LAST_NAME" required="">
+                <select class="form-generic form-control" id="inputgender" name="GENDER">
+                    <option selected disabled>Gender</option>
+                    <option name="optradio" value="M">Male</option>
+                    <option name="optradio" value="F">Female</option>
+                    <option name="optradio" value="U">Prefer not to say</option>
+                </select>
+                <input type="text" id="datepicker" class="form-generic form-control" name="BIRTHDATE" placeholder="Date of birth">
+                <input type="email" class="form-generic form-control" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" id="inputemail" placeholder="Email Address*" name="EMAIL_ADDRESS_" required="" value="">
+                <input id="inputsubmit" type="submit" class="btn-submit-generic btn btn-primary" style="padding: unset !important" value="SUBMIT">
             </div>
-        </div>
-        <div class="row" style="margin-bottom: 10px;">
-            <div class="col-lg-4 offset-lg-4 text-center">
-                <hr class="spacer-davidclulow" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 offset-md-4 text-center subtitle-davidclulow-marginbottom">
-                <p id="subtitle" class="subtitle-generic">You’re only a few clicks away from getting email
-                    exclusives, special offers and more delivered right to your inbox.
-                </p>
-            </div>
-        </div>
+        </form>
+    </main>
 
-        <div class="row">
-            <div class="col-lg-4 offset-lg-4 text-center" style="margin-bottom: 42px;">
-
-                <!-- Inserire URL qui! -->
-                <form id="joinForm" action="https://hook.eu1.make.com/qqorybxx9xlcrr6jsgdm1337rmbwbxsq" method="POST">
-
-                    <input type="hidden" id="STORE_ID" name="STORE_ID" value="X-S1UK">
-                    <input type="hidden" id="SALES_ORGANIZATION" name="SALES_ORGANIZATION" value="UK01">
-                    <input type="hidden" id="SOURCE_ID" name="SOURCE_ID" value="datacapture_form">
-                    <input type="hidden" id="DISTRIBUTION_CHANNEL" name="DISTRIBUTION_CHANNEL" value="S1">
-                    <input type="hidden" id="EMAIL_PERMISSION_STATUS_" name="EMAIL_PERMISSION_STATUS_" value="I">
-                    <input type="hidden" id="CUSTOMER_ID" name="CUSTOMER_ID_"><input type="hidden" id="CID" name="CID">
-                    <input type="hidden" id="COUNTRY_" name="COUNTRY_" value="UK">
-                    <div class="form-margin-bottom form-group">
-                        <input type="text" class="form-generic form-control" id="inputname" placeholder="First Name*" name="FIRST_NAME" required="">
-                    </div>
-                    <div class="form-margin-bottom form-group">
-                        <input type="text" class="form-generic form-control" id="inputlastname" placeholder="Last Name*" name="LAST_NAME" required="">
-                    </div>
-                    <div class="form-margin-bottom form-group">
-                        <select class="form-generic form-control" id="inputgender" name="GENDER">
-                            <option selected disabled>Gender</option>
-                            <option name="optradio" value="M">Male</option>
-                            <option name="optradio" value="F">Female</option>
-                            <option name="optradio" value="U">Prefer not to say</option>
-                        </select>
-                    </div>
-                    <div id="dataDiv" class="form-margin-bottom form-group">
-                        <input type="text" id="datepicker" class="form-generic form-control" name="BIRTHDATE" placeholder="Date of birth">
-                    </div>
-                    <div class="form-margin-bottom form-group">
-                        <input type="email" class="form-generic form-control" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" id="inputemail" placeholder="Email Address*" name="EMAIL_ADDRESS_" required="" value="">
-                    </div>
-                    <input id="inputsubmit" type="submit" class="btn-submit-generic btn btn-primary" style="padding: unset !important" value="SUBMIT">
-
-                    <input type="hidden" name="CAMPAIGN_" value="DC_PostCW_Form">
-                    <input type="hidden" name="charset_" value="UTF-8">
-                    <input type="hidden" name="_Sent_" value="2022-10-21 00:36:59.297">
-                    <input type="hidden" name="_LID_" value="10828705">
-                    <input type="hidden" name="_ri_" value="X0Gzc2X%3DAQpglLjHJlYQGzclyfmgKzbG7azeIHsfdzdOIMssw9Y5XBzcCPWvISzdtYVwjpnpgHlpgneHmgJoXX0Gzc2X%3DAQpglLjHJlYQGzdERv4qPzdlze3GO12EJbpWwfsw9Y5XBzcCPWvISzdtY">
-                    <input type="hidden" name="_ei_" value="EOTUNwTcPxLOITgVlOWxOUY">
-                    <input type="hidden" name="_di_" value="vgvrucln0mcdfkbmcjf4g31eq3jc9vhhdu9ciahfng8kfjrebdtg">
-                    <input type="hidden" name="__HIDDEN_FIELD_NAMES__" value="STORE_ID;SALES_ORGANIZATION;SOURCE_ID;DISTRIBUTION_CHANNEL;EMAIL_PERMISSION_STATUS_;CUSTOMER_ID_;CID;COUNTRY_;CAMPAIGN_;charset_;_Sent_;_LID_;_ri_;_ei_;_di_;__HIDDEN_FIELD_NAMES__">
-                </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-center" style="margin-bottom: 100px;">
-                <p id="footertext" class="footer-text-generic">Submit and get set to receive exclusive offers, the
-                    latest trends, and other marketing communications. (Visit <a href="#" target="_blank">Privacy Policy</a>).
-                </p>
-            </div>
-        </div>
-    </div>
-    <script>
-        //$("#custId").val( base64EncodeUnicode(datestring));
-
-        function getParameters() {
-            var searchString = window.location.search.substring(1),
-                params = searchString.split("&"),
-                hash = {};
-
-            if (searchString == "") return {};
-            for (var i = 0; i < params.length; i++) {
-                var val = params[i].split("=");
-                hash[unescape(val[0])] = unescape(val[1]);
-            }
-
-            return hash;
-        }
-
-        $("#joinForm").submit(function (e) {
-            $('#CUSTOMER_ID').val($('#inputemail').val().toUpperCase() + "_DCFORM");
-            $('#GENDER').val($('input[name="optradio"]:checked').val());
-
-
-
-            if ($('#inputcountry option:selected').val() == "") {
-                $("#inputcountry").addClass("invalid");
-                e.preventDefault();
-            }
-        });
-
-        $("#joinForm").change(function () {
-            if ($('#inputcountry option:selected').val() != "") {
-                $("#inputcountry").addClass("valid");
-            }
-        })
-
-        $("#inputcountry").change(function () {
-            if ($("#inputcountry").val() == "UK") {
-                $('#STORE_ID').val('');
-                $('#SALES_ORGANIZATION').val('UK01');
-            }
-        });
-
-        var param = getParameters();
-        if (param.cid != undefined) {
-            $('#CID').val(param.cid);
-        }
-
-    </script>
+    <footer class="footer">
+        <p id="footertext" class="footer-text-generic">Submit and get set to receive exclusive offers, the latest trends, and other marketing communications. (Visit <a href="#" target="_blank">Privacy Policy</a>). </p>
+    </footer>
 </body>
 
 </html>
