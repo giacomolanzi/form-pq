@@ -1,6 +1,12 @@
 /* Font */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
+/* @font-face {
+  font-family: GraublauWeb;
+  font-weight: bold;
+  src: url("path/GraublauWebBold.otf") format("opentype");
+} */
+
 /* Generic settings */
 
 p {
@@ -21,7 +27,9 @@ header.header-form {
   display: grid;
   gap: 8px;
 }
-header.header-form .header-picture {
+.header-picture {
+  background: no-repeat url(../images/mobile.jpg);
+  background-size: cover;
   max-width: 100%;
   height: 250px;
   box-sizing: content-box;
@@ -106,7 +114,7 @@ input.btn-submit {
     font-size: 1.6rem;
   }
   .header-picture {
-    background: no-repeat url(../desktop.jpg);
+    background: no-repeat url(../images/desktop.jpg);
     background-size: cover;
   }
 }
