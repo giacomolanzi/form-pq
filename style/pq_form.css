@@ -1,11 +1,16 @@
 /* Font */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
-/* @font-face {
-  font-family: GraublauWeb;
+@font-face {
+  font-family: ApexNew-bold;
   font-weight: bold;
-  src: url("path/GraublauWebBold.otf") format("opentype");
-} */
+  src: url("../font/ApexNew-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: ApexNew-light;
+  font-weight: 200;
+  src: url("../font/ApexNew-light.otf") format("opentype");
+}
 
 /* Generic settings */
 
@@ -15,7 +20,7 @@ p {
   text-align: center;
 }
 body {
-  font-family: "Montserrat";
+  font-family: "ApexNew-light";
   text-align: center;
   max-width: 100%;
   margin: 0;
@@ -38,6 +43,7 @@ header.header-form .logo {
   margin: 10px auto 0 auto;
 }
 .title {
+  font-family: "ApexNew-bold";
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -51,7 +57,7 @@ header.header-form .logo {
   box-sizing: border-box;
   height: calc(1.5em + 0.75rem + 2px);
 
-  font-family: "Montserrat", sans-serif;
+  font-family: "ApexNew-light", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
 
@@ -100,7 +106,6 @@ input.btn-submit {
 /* Footer settings */
 
 .footer-text-generic {
-  font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
   line-height: 1.67;
   color: hsl(345deg 6% 13%);
