@@ -82,7 +82,7 @@ input.btn-submit {
   border-color: hsl(192deg 100% 12%);
 
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: bold;
 
   color: hsl(0deg 0% 100%);
 }
