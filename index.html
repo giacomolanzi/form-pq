@@ -5,8 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="style/pq_form.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="/style/pq_form.css">
+    <script src="/js/script.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
@@ -27,15 +27,10 @@
 </head>
 
 <body>
-    <header>
-        <picture>
-            <!-- Versione Desktop 1956 × 484 -->
-            <source media="(min-width:376px)" srcset="desktop.jpg" type="image/svg+xml">
-            <!-- Versione Mobile 605 × 464 -->
-            <source media="(max-width:376px)" srcset="mobile.jpg" type="image/svg+xml">
-            <!-- Versione standard ( = desktop), no media query -->
-            <img src="desktop.jpg" class="img-fluid" alt="heroimage">
-        </picture>
+    <header class="header-form">
+        <div class="header-picture">
+            <!-- <img src="desktop.jpg" class="img-fluid" alt="heroimage"> -->
+        </div>
 
         <div class="logo">
             <img src="/images/logo.svg" class="img-fluid mx-auto d-block" alt="logo" width="244">
@@ -45,7 +40,6 @@
         <div class="title">
             <h1>Test di un form di inoltro</h1>
         </div>
-        <hr class="spacer" />
         <div class="subtitle">
             <p>You’re only a few clicks away from getting email exclusives, special offers and more delivered right to your inbox.</p>
         </div>
