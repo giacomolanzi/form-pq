@@ -1,5 +1,8 @@
 /* Font */
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+/* Font Piquadro */
 
 @font-face {
   font-family: ApexNew-bold;
@@ -12,6 +15,14 @@
   src: url("../font/ApexNew-light.otf") format("opentype");
 }
 
+:root {
+  --font-pq-light: "ApexNew-light";
+  --font-pq-bold: "ApexNew-bold";
+  --font-tb: "Montserrat";
+  --hero-bg-pq-desktop: url(../images/desktop.jpg);
+  --hero-bg-pq-mobile: url(../images/mobile.jpg);
+}
+
 /* Generic settings */
 
 p {
@@ -20,7 +31,9 @@ p {
   text-align: center;
 }
 body {
-  font-family: "ApexNew-light";
+  font-family: var(--font-pq-light);
+  /* font-family: var(--font-tb); */
+  font-weight: 400;
   text-align: center;
   max-width: 100%;
   margin: 0;
@@ -33,7 +46,7 @@ header.header-form {
   gap: 8px;
 }
 .header-picture {
-  background: no-repeat url(../images/mobile.jpg);
+  background: no-repeat var(--hero-bg-pq-mobile);
   background-size: cover;
   max-width: 100%;
   height: 250px;
@@ -43,7 +56,8 @@ header.header-form .logo {
   margin: 10px auto 0 auto;
 }
 .title {
-  font-family: "ApexNew-bold";
+  font-family: var(--font-pq-bold);
+  /* font-family: var(--font-tb); */
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -57,7 +71,8 @@ header.header-form .logo {
   box-sizing: border-box;
   height: calc(1.5em + 0.75rem + 2px);
 
-  font-family: "ApexNew-light", sans-serif;
+  font-family: var(--font-pq-light), sans-serif;
+  /* font-family: var(--font-tb), sans-serif; */
   font-size: 1rem;
   line-height: 1.5;
 
@@ -119,7 +134,7 @@ input.btn-submit {
     font-size: 1.6rem;
   }
   .header-picture {
-    background: no-repeat url(../images/desktop.jpg);
+    background: no-repeat var(--hero-bg-pq-desktop);
     background-size: cover;
   }
 }
