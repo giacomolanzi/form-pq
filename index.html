@@ -40,10 +40,10 @@
 
 
         <div class="title">
-            <h1>Test di un form di inoltro</h1>
+            <h1>{title}</h1>
         </div>
         <div class="subtitle">
-            <p>You’re only a few clicks away from getting email exclusives, special offers and more delivered right to your inbox.</p>
+            <p>{intro_PQLC}{intro_TB}</p>
         </div>
     </header>
     <main class="form">
@@ -70,23 +70,39 @@
                 <input type="hidden" id="redirect" name="redirect" value="https://piquadro.com/">
             </div>
             <div class="form-visible">
-                <input type="text" class="form-generic form-control" id="inputname" placeholder="First Name*" name="first_name" required="">
-                <input type="text" class="form-generic form-control" id="inputlastname" placeholder="Last Name*" name="last_name" required="">
+                <input type="text" class="form-generic form-control" id="inputname" placeholder="{first_name}*" name="first_name" required>
+                <input type="text" class="form-generic form-control" id="inputlastname" placeholder="{last_name}*" name="last_name" required>
                 <select class="form-generic form-control" id="inputgender" name="gender">
-                    <option selected disabled>Gender</option>
-                    <option name="optradio" value="M">Male</option>
-                    <option name="optradio" value="F">Female</option>
-                    <option name="optradio" value="U">Prefer not to say</option>
+                    <option selected disabled>{gender}</option>
+                    <option name="optradio" value="M">{male}</option>
+                    <option name="optradio" value="F">{female}</option>
+                    <option name="optradio" value="O">{other}</option>
+                    <option name="optradio" value="U">{undefined}</option>
                 </select>
-                <input type="text" id="datepicker" class="form-generic form-control" name="birthdate" placeholder="Date of birth">
-                <input type="email" class="form-generic form-control" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" id="inputemail" placeholder="Email Address*" name="email_address" required="" value="">
-                <input id="inputsubmit" type="submit" class="btn-submit" value="SUBMIT">
+                <select class="form-generic form-control" id="topic-newsletter" name="newsletter-topic">
+                    <option selected disabled>{collection}</option>
+                    <option name="optradio" value="W">{coll_women}</option>
+                    <option name="optradio" value="M">{coll_men}</option>
+                    <option name="optradio" value="B">{coll_both}</option>
+                </select>
+                <select class="form-generic form-control" id="language" name="language">
+                    <option selected disabled>{language}</option>
+                    <option name="optradio" value="IT">{italian}</option>
+                    <option name="optradio" value="EN">{english}</option>
+                    <option name="optradio" value="FR">{french}</option>
+                    <option name="optradio" value="ES">{spanish}</option>
+                    <option name="optradio" value="DE">{german}</option>
+                    <option name="optradio" value="RU">{russian}</option>
+                </select>
+                <input type="text" id="datepicker" class="form-generic form-control" name="birthdate" placeholder="{birthday}">
+                <input type="email" class="form-generic form-control" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" id="inputemail" placeholder="{email}*" name="email_address" required value="">
+                <input id="inputsubmit" type="submit" class="btn-submit" value="{submit}">
             </div>
         </form>
     </main>
 
     <footer class="footer">
-        <p id="footertext" class="footer-text-generic">Submit and get set to receive exclusive offers, the latest trends, and other marketing communications. (Visit <a href="#" target="_blank">Privacy Policy</a>). </p>
+        <p id="footertext" class="footer-text-generic">{footer}</p>
     </footer>
 </body>
 
