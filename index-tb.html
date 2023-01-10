@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style/tb-style.css">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({
+                defaultDate: "-18Y",
+                changeMonth: true,
+                changeYear: true,
+                yearRange: "1900:2006",
+                dateFormat: "mm-dd-yy",
+                maxDate: "01/01/2006",
+            });
+        });
+    </script>
+
+    <title>Input form generic</title>
+</head>
+
+<body>
+    <header class="header-form">
+        <div class="header-picture">
+            <!-- <img src="desktop.jpg" class="img-fluid" alt="heroimage"> -->
+        </div>
+
+        <div class="logo">
+            <!-- <img src="images/pq/pq-logo.svg" class="img-fluid mx-auto d-block" alt="logo" width="244"> -->
+            <img src="images/tb/tb-logo.svg" class="img-fluid mx-auto d-block" alt="logo" width="244">
+            <!-- <img src="images/lc/lc-logo.svg" class="img-fluid mx-auto d-block" alt="logo" width="244"> -->
+        </div>
+
+
+        <div class="title">
+            <h1>{title}</h1>
+        </div>
+        <div class="subtitle">
+            <p>{intro_PQLC}{intro_TB}</p>
+        </div>
+    </header>
+    <main class="form">
+
+        <!-- Inserire URL qui! -->
+        <form id="joinForm" action="https://hook.eu1.make.com/qqorybxx9xlcrr6jsgdm1337rmbwbxsq" method="POST">
+
+            <div class="form-hidden">
+                <input type="hidden" id="STORE_ID" name="STORE_ID" value="X-S1UK">
+                <input type="hidden" id="SALES_ORGANIZATION" name="SALES_ORGANIZATION" value="UK01">
+                <input type="hidden" id="SOURCE_ID" name="SOURCE_ID" value="datacapture_form">
+                <input type="hidden" id="DISTRIBUTION_CHANNEL" name="DISTRIBUTION_CHANNEL" value="S1">
+                <input type="hidden" id="EMAIL_PERMISSION_STATUS_" name="EMAIL_PERMISSION_STATUS_" value="I">
+                <input type="hidden" id="CUSTOMER_ID" name="CUSTOMER_ID_"><input type="hidden" id="CID" name="CID">
+                <input type="hidden" id="COUNTRY_" name="COUNTRY_" value="UK">
+                <input type="hidden" name="CAMPAIGN_" value="DC_PostCW_Form">
+                <input type="hidden" name="charset_" value="UTF-8">
+                <input type="hidden" name="_Sent_" value="2022-10-21 00:36:59.297">
+                <input type="hidden" name="_LID_" value="10828705">
+                <input type="hidden" name="_ri_" value="X0Gzc2X%3DAQpglLjHJlYQGzclyfmgKzbG7azeIHsfdzdOIMssw9Y5XBzcCPWvISzdtYVwjpnpgHlpgneHmgJoXX0Gzc2X%3DAQpglLjHJlYQGzdERv4qPzdlze3GO12EJbpWwfsw9Y5XBzcCPWvISzdtY">
+                <input type="hidden" name="_ei_" value="EOTUNwTcPxLOITgVlOWxOUY">
+                <input type="hidden" name="_di_" value="vgvrucln0mcdfkbmcjf4g31eq3jc9vhhdu9ciahfng8kfjrebdtg">
+                <input type="hidden" name="__HIDDEN_FIELD_NAMES__" value="STORE_ID;SALES_ORGANIZATION;SOURCE_ID;DISTRIBUTION_CHANNEL;EMAIL_PERMISSION_STATUS_;CUSTOMER_ID_;CID;COUNTRY_;CAMPAIGN_;charset_;_Sent_;_LID_;_ri_;_ei_;_di_;__HIDDEN_FIELD_NAMES__">
+                <input type="hidden" id="redirect" name="redirect" value="https://piquadro.com/">
+            </div>
+            <div class="form-visible">
+                <input type="text" class="form-generic form-control" id="inputname" placeholder="{first_name}*" name="first_name" required>
+                <input type="text" class="form-generic form-control" id="inputlastname" placeholder="{last_name}*" name="last_name" required>
+                <select class="form-generic form-control" id="inputgender" name="gender">
+                    <option selected disabled>{gender}</option>
+                    <option name="optradio" value="M">{male}</option>
+                    <option name="optradio" value="F">{female}</option>
+                    <option name="optradio" value="O">{other}</option>
+                    <option name="optradio" value="U">{undefined}</option>
+                </select>
+                <select class="form-generic form-control" id="topic-newsletter" name="newsletter-topic">
+                    <option selected disabled>{collection}</option>
+                    <option name="optradio" value="W">{coll_women}</option>
+                    <option name="optradio" value="M">{coll_men}</option>
+                    <option name="optradio" value="B">{coll_both}</option>
+                </select>
+                <select class="form-generic form-control" id="language" name="language">
+                    <option selected disabled>{language}</option>
+                    <option name="optradio" value="IT">{italian}</option>
+                    <option name="optradio" value="EN">{english}</option>
+                    <option name="optradio" value="FR">{french}</option>
+                    <option name="optradio" value="ES">{spanish}</option>
+                    <option name="optradio" value="DE">{german}</option>
+                    <option name="optradio" value="RU">{russian}</option>
+                </select>
+                <input type="text" id="datepicker" class="form-generic form-control" name="birthdate" placeholder="{birthday}">
+                <input type="email" class="form-generic form-control" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" id="inputemail" placeholder="{email}*" name="email_address" required value="">
+                <input id="inputsubmit" type="submit" class="btn-submit" value="{submit}">
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p id="footertext" class="footer-text-generic">{footer}</p>
+    </footer>
+</body>
+
+</html>
