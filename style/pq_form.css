@@ -7,20 +7,55 @@
 @font-face {
   font-family: ApexNew-bold;
   font-weight: bold;
-  src: url("../font/ApexNew-Bold.otf") format("opentype");
+  src: url("../font/pq/ApexNew-Bold.otf") format("opentype");
 }
 @font-face {
   font-family: ApexNew-light;
   font-weight: 200;
-  src: url("../font/ApexNew-light.otf") format("opentype");
+  src: url("../font/pq/ApexNew-Light.otf") format("opentype");
+}
+
+/* Font TheBridge */
+
+@font-face {
+  font-family: Eurostile-bold;
+  font-weight: bold;
+  src: url("../font/tb/EurostileLTStd-Bold.otf");
+}
+
+@font-face {
+  font-family: Eurostile-regular;
+  font-weight: 400;
+  src: url("../font/tb/EurostileLTStd-regular.otf");
+}
+
+/* Font Lancel */
+
+@font-face {
+  font-family: LancelFont-bold;
+  font-weight: bold;
+  src: url("../font/lc/LancelFont-Bold.otf");
+}
+
+@font-face {
+  font-family: LancelFont-thin;
+  font-weight: 300;
+  src: url("../font/lc/LancelFont-Thin.otf");
 }
 
 :root {
   --font-pq-light: "ApexNew-light";
   --font-pq-bold: "ApexNew-bold";
-  --font-tb: "Montserrat";
-  --hero-bg-pq-desktop: url(../images/desktop.jpg);
-  --hero-bg-pq-mobile: url(../images/mobile.jpg);
+  --font-tb-bold: "Eurostile-bold";
+  --font-tb-regular: "Eurostile-regular";
+  --font-lc-bold: "LancelFont-bold";
+  --font-lc-thin: "LancelFont-thin";
+  --hero-bg-pq-desktop: url("../images/pq/pq-desktop.jpg");
+  --hero-bg-pq-mobile: url("../images/pq/pq-mobile.jpg");
+  --hero-bg-tb-desktop: url("../images/tb/tb-desktop.jpg");
+  --hero-bg-tb-mobile: url("../images/tb/tb-mobile.jpg");
+  --hero-bg-lc-desktop: url("../images/lc/lc-desktop.jpg");
+  --hero-bg-lc-mobile: url("../images/lc/lc-mobile.jpg");
 }
 
 /* Generic settings */
@@ -31,8 +66,9 @@ p {
   text-align: center;
 }
 body {
-  font-family: var(--font-pq-light);
-  /* font-family: var(--font-tb); */
+  /* font-family: var(--font-pq-light); */
+  /* font-family: var(--font-tb-regular); */
+  font-family: var(--font-lc-thin);
   font-weight: 400;
   text-align: center;
   max-width: 100%;
@@ -46,8 +82,11 @@ header.header-form {
   gap: 8px;
 }
 .header-picture {
-  background: no-repeat var(--hero-bg-pq-mobile);
+  /* background: no-repeat var(--hero-bg-pq-mobile); */
+  /* background: no-repeat var(--hero-bg-tb-mobile); */
+  background: no-repeat var(--hero-bg-lc-mobile);
   background-size: cover;
+  background-position: center;
   max-width: 100%;
   height: 250px;
   box-sizing: content-box;
@@ -56,8 +95,9 @@ header.header-form .logo {
   margin: 10px auto 0 auto;
 }
 .title {
-  font-family: var(--font-pq-bold);
-  /* font-family: var(--font-tb); */
+  /* font-family: var(--font-pq-bold); */
+  /* font-family: var(--font-tb-bold); */
+  font-family: var(--font-lc-bold);
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -71,8 +111,9 @@ header.header-form .logo {
   box-sizing: border-box;
   height: calc(1.5em + 0.75rem + 2px);
 
-  font-family: var(--font-pq-light), sans-serif;
-  /* font-family: var(--font-tb), sans-serif; */
+  /* font-family: var(--font-pq-light), sans-serif; */
+  /* font-family: var(--font-tb-regular), sans-serif; */
+  font-family: var(--font-lc-thin), sans-serif;
   font-size: 1rem;
   line-height: 1.5;
 
@@ -134,7 +175,9 @@ input.btn-submit {
     font-size: 1.6rem;
   }
   .header-picture {
-    background: no-repeat var(--hero-bg-pq-desktop);
+    /* background: no-repeat var(--hero-bg-pq-desktop); */
+    /* background: no-repeat var(--hero-bg-tb-desktop); */
+    background: no-repeat var(--hero-bg-lc-desktop);
     background-size: cover;
   }
 }
